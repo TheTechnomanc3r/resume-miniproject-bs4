@@ -196,8 +196,18 @@
         
     </footer>
     <script>
-        var APIKey = "AIzaSyAmW0n-gMFw7Zrx2bo5IgWQYoW3e4tf_cA";
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
     </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmW0n-gMFw7Zrx2bo5IgWQYoW3e4tf_cA&callback=initMap"></script>
     
 </body>
 </html>
